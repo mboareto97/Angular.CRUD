@@ -1,0 +1,14 @@
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.button-dialog {
+  background-color: #15803d;
+  color: #fff;
+}
+
+.button-dialog:hover {
+  background-color: #22c55e;
+  transition: 0.2s;
+}

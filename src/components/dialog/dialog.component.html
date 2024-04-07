@@ -1,0 +1,28 @@
+<h2 mat-dialog-title>Cadastrar Novo Dispositivo</h2>
+<mat-dialog-content>
+  <div class="flex-column">
+    <mat-form-field>
+      <mat-label>Nome</mat-label>
+      <input matInput [(ngModel)]="data.nome">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Informações de acesso</mat-label>
+      <input matInput [(ngModel)]="data.infoAcesso">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Descrição</mat-label>
+      <textarea matInput [(ngModel)]="data.descricao"></textarea>
+    </mat-form-field>
+  </div>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button mat-dialog-close>Cancelar</button>
+  <button mat-button 
+    mat-dialog-close 
+    cdkFocusInitial
+    class="button-dialog"
+    [mat-dialog-close]="data"
+  >
+    Salvar
+  </button>
+</mat-dialog-actions>
